@@ -1,15 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Sample</title>
-</head>
-
-<body>
-    <h1>Hello world!</h1>
-    <img src="img/vinyl.jpg" width="200" alt="vinyl">
-</body>
-
+  <head>
+    <title>Learning HTML tags</title>
+  </head>
+  <body>
+    <h1>Vinyl records</h1>
+    <main>
+      <section>
+        <h2>Vinyl Photos</h2>
+        <p>Click here to view more <a target="_blank" href="https://www.google.com/search?q=vinyl+image&sxsrf=ALiCzsbDrH9OTXcZbEt4zedW5Ms48fQqLw:1656966576045&source=lnms&tbm=isch&sa=X&ved=2ahUKEwj7ta3BieD4AhVsmYsKHbV4CCMQ_AUoAXoECAIQAw&biw=1536&bih=763&dpr=1.25">record photos</a>.</p>
+        <a href="https://www.google.com/search?q=vinyl+image&sxsrf=ALiCzsbDrH9OTXcZbEt4zedW5Ms48fQqLw:1656966576045&source=lnms&tbm=isch&sa=X&ved=2ahUKEwj7ta3BieD4AhVsmYsKHbV4CCMQ_AUoAXoECAIQAw&biw=1536&bih=763&dpr=1.25"><img src="img/vinyl.jpg" alt="A vinyl records"></a>
+      </section>
+      <section>
+        <h2>Vinyl music</h2>
+        <h3>By genre:</h3>
+        <ul>
+          <li>rock</li>
+          <li>pop</li>
+          <li>rap</li>
+        </ul>
+        <figure>
+          <img src="http://unblast.com/wp-content/uploads/2019/07/Vinyl-Record-Mockup.jpg" width="750px" alt="vinyl-mockup-1">
+          <figcaption>People <em>love</em> music.</figcaption>  
+        </figure>
+        <h3>Top 3 vinyl records:</h3>
+        <ol>
+          <li>Thriller - Michael Jackson - 27 million vinyl records sold</li>
+          <li>Bat Out of Hell - Meat Loaf - 25.3 million vinyl records sold</li>
+          <li>Back in Black - AC/DC - 24.5 millions d'album vinyl records sold</li>
+        </ol>
+        <figure>
+          <img src="img/vinyl-record-horizon.jpg" width="750px" alt="vinyl Vinyl-Record-Mockup-2">
+          <figcaption>Neighbours <strong>hate</strong> your loud music.</figcaption>  
+        </figure>
+      </section>
+      <section>
+        <h2>Vinyl Form</h2>
+        <form>
+          <fieldset>
+            <legend>Have you ever listened music on a vinyl record?</legend>
+            <label><input id="yes" type="radio" name="yes-no" value="yes" checked> Yes</label>
+            <label><input id="no" type="radio" name="yes-no" value="no"> No</label>
+          </fieldset>
+          <fieldset>
+            <legend>What genre of the following suits you best?</legend>
+            <input id="rock" type="checkbox" name="genre" value="rock" checked> <label for="rock">Rock</label>
+            <input id="pop" type="checkbox" name="genre" value="pop"> <label for="pop">Pop</label>
+            <input id="classic" type="checkbox" name="genre" value="classic"> <label for="classic">Classic</label>
+          </fieldset>
+          <input type="text" name="recordPhoto" placeholder="Enter your favourite singer">
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>Lviv-2022</p>
+    </footer>
+  </body>
 </html>
